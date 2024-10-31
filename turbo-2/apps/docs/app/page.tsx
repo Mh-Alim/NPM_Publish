@@ -1,12 +1,10 @@
 import Image from "next/image";
 import { Button } from "@repo/ui/button";
-import { Signup } from "@repo/ui/mycomp";
 import styles from "./page.module.css";
 
 export default function Home() {
   return (
     <div className={styles.page}>
-      <Signup />
       <main className={styles.main}>
         <Image
           className={styles.logo}
@@ -48,7 +46,7 @@ export default function Home() {
             Read our docs
           </a>
         </div>
-        <Button appName="web" className={styles.secondary}>
+        <Button appName="docs" className={styles.secondary}>
           Open alert
         </Button>
       </main>
